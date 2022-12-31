@@ -15,5 +15,9 @@ kit_depends := \
 
 
 publish: pre-publish publish-common release-upload release-list
-	@echo ">>>> publish complete OK.  <<<"
 	cat tmp/draft-url
+	@echo ">>>> publish complete OK. (FINAL)  <<<"
+
+publish-draft: pre-publish publish-common release-draft-upload release-list
+	cat tmp/draft-url
+	@echo ">>>> publish complete OK. (DRAFT)  <<<"
