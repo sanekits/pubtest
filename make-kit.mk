@@ -11,7 +11,7 @@ kit_depends := \
     bin/pubtest.bashrc \
     bin/pubtest.sh
 
-.PHONY: publish
+.PHONY: publish publish-draft
 
 
 publish: pre-publish publish-common release-upload release-list
@@ -20,4 +20,4 @@ publish: pre-publish publish-common release-upload release-list
 
 publish-draft: pre-publish publish-common release-draft-upload release-list
 	cat tmp/draft-url
-	@echo ">>>> publish complete OK. (DRAFT)  <<<"
+	@echo ">>>> publish complete OK. (DRAFT - you must manually publish it from github release page)  <<<"
