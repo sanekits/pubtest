@@ -6,6 +6,6 @@ pubtest-semaphore() {
 
 do-pubtest() {
     # TODO: This is a test function.  You can discard it.
-    pubtest.sh
+    echo "yae this is it"
 }
 
